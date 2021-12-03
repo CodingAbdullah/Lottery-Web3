@@ -22,8 +22,6 @@ var input = {
     }
 }; 
 
-//console.log(JSON.parse(solc.compile(JSON.stringify(input))).contracts['lottery.sol'].Lottery);
-
 // Exporting compiled data as JSON object
 module.exports = JSON.parse(solc.compile(JSON.stringify(input))).contracts['lottery.sol'].Lottery;
 
