@@ -16,6 +16,7 @@ contract Lottery {
     }
 
     function enter() external payable {
+        require(msg.value > 0.01 ether); // Minimum ether balance required for entry
         players.push(payable(msg.sender)); // Global object containing caller address 
     }
 
@@ -29,5 +30,9 @@ contract Lottery {
 
         players[winner].transfer(address(this).balance); // Transfer ETH balance from contract to winner
         players = new address payable[](0); // Reset players participating in lottery
+    }
+
+    function getPlayers() external view returns (address payable[] memory){
+        return players; // Return the list of players participating in lottery
     }
 }
