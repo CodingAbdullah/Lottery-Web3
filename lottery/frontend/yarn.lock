@@ -2566,6 +2566,10 @@
   "resolved" "https://registry.npmjs.org/@ledgerhq/logs/-/logs-5.50.0.tgz"
   "version" "5.50.0"
 
+"@metamask/detect-provider@github:metamask/detect-provider":
+  "resolved" "git+ssh://git@github.com/metamask/detect-provider.git#2bbb8e685e0e8ca0a89a00d28a7e4aa3818ef1ce"
+  "version" "1.2.0"
+
 "@microsoft/fetch-event-source@2.0.1":
   "integrity" "sha512-W6CLUJ2eBMw3Rec70qrsEW0jOm/3twwJv21mrmj2yORiaVmVYGS4sSS5yUwvQc1ZlDLYGPnClVWmUUMagKNsfA=="
   "resolved" "https://registry.npmjs.org/@microsoft/fetch-event-source/-/fetch-event-source-2.0.1.tgz"

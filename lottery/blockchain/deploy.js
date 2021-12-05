@@ -21,7 +21,6 @@ const deploy = async () => {
                     .deploy({ data: evm.bytecode.object })
                     .send({ gas: 1000000, from: accounts[0] });
 
-    console.log("Contract sucessfully deployed to: " + contract.options.address); // Obtain message contract deploy succesfully to Ropsten Test Network
     provider.engine.stop();
 };
 

@@ -69,7 +69,7 @@ describe("Contract functionality and entry", () => {
         try {
             await lottery.methods.enter().send({
                 from: accounts[0],
-                value: web3.utils.toWei('0.005', 'ether') // entering insufficient balance of ether for entry
+                value: web3.utils.toWei('0.005', 'ether') // Entering insufficient balance of ether for entry
             });
             assert(false); // If allowed, fail test immediately
         }
