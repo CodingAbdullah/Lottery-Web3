@@ -53,7 +53,7 @@ class App extends Component {
         <p>Want to try your luck?</p>
         <form class="first-group">
           <div class="form-group">
-            <label>Amount of ether to enter</label><br /><input min="0" type="number" value={e => this.setState({ entryValue: e.target.value })}/><br /> 
+            <label>Amount of ether to enter</label><br /><input min="0" type="number" onChange={e => this.setState({ entryValue: e.target.value })}/><br /> 
             <button class="first-button btn btn-primary" onClick={this.entryListener}>Enter</button>  
           </div>
         </form>
