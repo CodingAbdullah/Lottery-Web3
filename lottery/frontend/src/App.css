@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  margin-top: 2rem;
 }
 
 .App-header {
@@ -15,4 +16,13 @@
 
 .App-link {
   color: #61dafb;
+}
+
+.first-group {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.first-button {
+  margin-top: 1.25rem;
 }
