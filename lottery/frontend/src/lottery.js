@@ -43,4 +43,4 @@ const _abi = [
 
 const _addr = '0x5F5D5c6DeEe7b759C560e98B3B896FC5181a7DC8';
 
-export default await new web3.eth.Contract(_abi, _addr);
+export default new web3.eth.Contract(_abi, _addr);

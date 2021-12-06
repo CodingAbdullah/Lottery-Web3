@@ -1,12 +1,12 @@
 import { Component } from 'react';
-import web3 from '../src/web3';
-import lottery from '../src/lottery';
+import web3 from '../web3';
+import lottery from '../lottery';
 import './App.css';
 
 class App extends Component {
 
   constructor(props){
-    super();
+    super(props);
 
     // Initializing state from values of contract
     this.state = {
@@ -34,7 +34,7 @@ class App extends Component {
     this.setState({ prizeValue: web3.utils.fromWei(balance, 'ether'), entryValue: 0 });
   }
 
-  pickWinnerListener = () => {
+  pickWinnerListener = async () => {
     const accounts = await web3.eth.getAccounts();
     this.setState({ msg: 'Picking Winner...' }); // Notify players
 
